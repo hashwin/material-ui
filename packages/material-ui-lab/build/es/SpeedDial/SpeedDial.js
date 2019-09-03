@@ -246,7 +246,7 @@ const SpeedDial = React.forwardRef(function SpeedDial(props, ref) {
     left: classes.directionLeft,
     right: classes.directionRight
   }[direction]);
-  let clickProps = {
+  const clickProps = {
     onClick
   };
 

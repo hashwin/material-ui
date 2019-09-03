@@ -55,7 +55,8 @@ export var styles = function styles(theme) {
       position: 'absolute',
       right: 65,
       top: 14,
-      padding: '5px 16px'
+      padding: '5px 16px',
+      whiteSpace: 'nowrap'
     },
 
     /* Styles applied to the root (`span`) component if `tooltipOpen={true}`. */
@@ -122,20 +123,17 @@ var SpeedDialAction = React.forwardRef(function SpeedDialAction(props, ref) {
     transitionDelay: "".concat(delay, "ms")
   };
 
-  if (ButtonProps.style) {
+  if (ButtonProps && ButtonProps.style) {
     ButtonProps.style.transitionDelay = "".concat(delay, "ms");
   }
 
   var actionButton = React.createElement(Fab, _extends({
     size: "small",
     className: clsx(className, classes.button, classes.actionButton, !open && classes.buttonClosed),
-    style: {
-      transitionDelay: "".concat(delay, "ms")
-    },
     tabIndex: -1,
     role: "menuitem",
     onKeyDown: onKeyDown
-  }, ButtonProps, clickProps), icon);
+  }, clickProps, ButtonProps), icon);
 
   if (tooltipOpenProp) {
     return React.createElement("span", {
