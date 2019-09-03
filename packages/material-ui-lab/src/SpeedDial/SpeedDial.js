@@ -237,7 +237,7 @@ const SpeedDial = React.forwardRef(function SpeedDial(props, ref) {
     [classes.directionRight]: direction === 'right',
   });
 
-  let clickProps = { onClick };
+  const clickProps = { onClick };
 
   if (typeof document !== 'undefined' && 'ontouchstart' in document.documentElement) {
     clickProps.onTouchEnd = event => {
