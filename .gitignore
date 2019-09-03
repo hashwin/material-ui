@@ -17,7 +17,6 @@
 /test/regressions/screenshots
 /test/selenium-output
 /tmp
-build
 node_modules
 package-lock.json
 size-snapshot.json
