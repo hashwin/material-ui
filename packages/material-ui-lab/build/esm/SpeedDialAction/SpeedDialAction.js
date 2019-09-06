@@ -55,7 +55,7 @@ export var styles = function styles(theme) {
       position: 'absolute',
       right: 65,
       top: 14,
-      padding: '5px 16px',
+      padding: '3px 16px',
       whiteSpace: 'nowrap'
     },
 

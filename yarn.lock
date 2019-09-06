@@ -1754,6 +1754,17 @@
     npmlog "^4.1.2"
     write-file-atomic "^2.3.0"
 
+"@material-ui/lab@^4.0.0-alpha.18":
+  version "4.0.0-alpha.25"
+  resolved "https://registry.yarnpkg.com/@material-ui/lab/-/lab-4.0.0-alpha.25.tgz#243ed39c3b26bcc1b545a32cc97aba53bae2c078"
+  integrity sha512-KaySMP6SLtPFalpFClcMK3sZO9UgzCzpFZ41UiESP0FvebORbH9NAD/TwYDyr+o2vghC+lzzRLRtr5HM3V8Mrg==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@material-ui/utils" "^4.4.0"
+    clsx "^1.0.4"
+    prop-types "^15.7.2"
+    warning "^4.0.3"
+
 "@material-ui/pickers@^3.2.1", "@material-ui/pickers@^3.2.2":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@material-ui/pickers/-/pickers-3.2.2.tgz#9b7a67f5a8f21f8183853ebc1848e5d8dd680d4c"
